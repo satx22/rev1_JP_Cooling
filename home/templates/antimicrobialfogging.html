@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance and Repair</title>
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+<!-- Header -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center">
+      <i class="bi bi-telephone-fill"></i> (210) 999-9786 Call Today
+      <i class="bi bi-calendar2-week-fill ms-4"></i> Monday-Sunday 24h Emergency Service
+    </div>
+    <a href="{% url 'contact' %}" class="btn btn-primary">SCHEDULE AN APPOINTMENT</a>
+  </div>
+
+  <div class="container d-flex align-items-center justify-content-center mt-3">
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="{% url 'index' %}#hero">Home</a></li>
+        <li class="dropdown">
+          <a href="{% url 'services' %}">Services</a>
+        </li>
+        <li><a class="nav-link scrollto" href="{% url 'MaintenanceandRepair' %}">Maintenance and Repair</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
+        <li><a class="nav-link scrollto active" href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  </div>
+</header><!-- End Header -->
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <h2>Anti-Microbial Fogging</h2>
+    </div>
+  </div>
+
+  <!-- Anti-Microbial Fogging Section -->
+  <section id="antimicrobialfogging" class="antimicrobialfogging">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="{% url 'acinstallation' %}">A/C Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'antimicrobialfogging' %}">Anti-Microbial Fogging</a></li>
+            <li class="list-group-item"><a href="{% url 'ductlessminisplits' %}">Ductless Mini Splits</a></li>
+            <li class="list-group-item"><a href="{% url 'MaintenanceandRepair' %}">Maintenance and Repair</a></li>
+            <li class="list-group-item"><a href="{% url 'tuneup' %}">Tune-Up & Inspections</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <h1>Anti-Microbial Fogging</h1>
+          <p>Another valuable asset we offer, after the HVAC system has been cleaned is anti-microbial fogging. The name of this service is impressive, but the service itself is quite simple. A small chemical fogger is used to introduce chemicals into the ductwork system, chemicals that sanitize germs, bacteria, and fungus. EPA-registered chemicals specifically for use in ductwork systems are available that do not require the evacuation of family members and pets from the occupied space while the chemical is being used.</p>
+          <h3 style="color: #ff0000; font-weight: bold;">Starting at $99.99 per A/C unit</h3>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Anti-Microbial Fogging Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>JP Cooling and Heating TACLB136029E</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

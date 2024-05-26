@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - JP Cooling and Heating</title>
+  <!-- Include your CSS files here -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+ <!-- Header -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center">
+      <i class="bi bi-telephone-fill"></i> (210) 999-9786 Call Today
+      <i class="bi bi-calendar2-week-fill ms-4"></i> Monday-Sunday 24h Emergency Service
+    </div>
+    <a href="{% url 'contact' %}" class="btn btn-primary">SCHEDULE AN APPOINTMENT</a>
+  </div>
+
+  <div class="container d-flex align-items-center justify-content-center mt-3">
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="{% url 'index' %}#hero">Home</a></li>
+        <li class="dropdown">
+          <a href="{% url 'services' %}">Services</a>
+        </li>
+        <li><a class="nav-link scrollto" href="{% url 'MaintenanceandRepair' %}">Maintenance and Repair</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
+        <li><a class="nav-link scrollto active" href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  </div>
+</header><!-- End Header -->
+
+  </header><!-- End Header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <h2>Ductless Mini Splits</h2>
+      </div>
+    </div>
+
+  <!-- Ductless Mini Splits Section -->
+  <section id="ductlessminisplits" class="ductlessminisplits">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="{% url 'acinstallation' %}">A/C Installation</a></li>
+            <li class="list-group-item"><a href="{% url 'antimicrobialfogging' %}">Anti-Microbial Fogging</a></li>
+            <li class="list-group-item active"><a href="{% url 'ductlessminisplits' %}">Ductless Mini Splits</a></li>
+            <li class="list-group-item"><a href="{% url 'MaintenanceandRepair' %}">Maintenance and Repair</a></li>
+            <li class="list-group-item"><a href="{% url 'tuneup' %}">Tune-Up & Inspections</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <h1>Ductless Mini Splits</h1>
+          <p>The great success of ductless mini splits in Miami, Florida is given to the high efficiency of these units. In order to maintain this great efficiency these units must have professional periodic maintenance. We offer professional maintenance and repair service to all makes and models of ductless mini split air conditioning units in Miami. Our Technicians are certified in many brands. Extend the life of your unit and regain your units efficiency today.</p>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Hot Room?</h3>
+              <p>Easily and inexpensively cool that room today. Aviv Air Conditioning Miami specialize in ductless mini split air conditioning technology. Ductless mini split are a great high efficient air conditioning system for any application. Installation in as little as 1 day. Mini split Air conditioning A/C Technology is on the leading edge in comfort control solutions. Miami mini split systems offer inverter technology. This means the system only uses the “BTU’s” needed to cool the space. The Mini split Air conditioning system can vary its capacity, unlike traditional Air Conditioning Systems that use 100% capacity 100% of the time.</p>
+
+              <p>Ideal for:</p>
+              <ul>
+                <li>Homes with flats rooms</li>
+                <li>Sunrooms</li>
+                <li>Garages</li>
+                <li>Hot rooms</li>
+                <li>IT rooms</li>
+                <li>Play rooms</li>
+                <li>Pools houses</li>
+                <li>Car collections</li>
+                <li>Warehouses</li>
+                <li>Master bedrooms</li>
+                <li>Efficiencies</li>
+                <li>Sheds</li>
+                <li>Large living spaces</li>
+                <li>Additions</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <img src="{% static 'img/ductless1.jpg' %}" class="img-fluid mb-4" alt="Ductless Mini Split 1">
+              <img src="{% static 'img/ductless2.jpg' %}" class="img-fluid mb-4" alt="Ductless Mini Split 2">
+              <img src="{% static 'img/ductless3.jpg' %}" class="img-fluid mb-4" alt="Ductless Mini Split 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Ductless Mini Splits Section -->
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>JP Cooling and Heating TACLB136029E</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
