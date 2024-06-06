@@ -28,14 +28,11 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="{% url 'index' %}#hero">Home</a></li>
-          <li class="dropdown">
-            <a href="{% url 'services' %}">Services</a>
-          </li>
+          <li><a href="{% url 'services' %}">Services</a></li>
           <li><a class="nav-link scrollto" href="{% url 'MaintenanceandRepair' %}">Maintenance and Repair</a></li>
           <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
           <li><a class="nav-link scrollto active" href="{% url 'contact' %}">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
@@ -43,7 +40,7 @@
   <!-- Breadcrumbs -->
   <div class="breadcrumbs">
     <div class="container">
-      <h2>About</h2>
+      <h2>A/C Installation</h2>
     </div>
   </div>
 
@@ -55,72 +52,16 @@
           <ul class="list-group">
             <li class="list-group-item active"><a href="#">A/C Installation</a></li>
             <li class="list-group-item"><a href="{% url 'antimicrobialfogging' %}">Anti-Microbial Fogging</a></li>
-            <li class="list-group-item"><a href="{% url 'ductlessminisplits' %}">Ductless Mini Splits</a></li>
             <li class="list-group-item"><a href="{% url 'MaintenanceandRepair' %}">Maintenance and Repair</a></li>
             <li class="list-group-item"><a href="{% url 'tuneup' %}">Tune-Up & Inspections</a></li>
           </ul>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-8">
           <h1>A/C Installation</h1>
           <p>Tired of sweating through every summer? Learn how you can save money with a more energy-efficient A/C unit.</p>
           <h3>Air conditioner basics</h3>
           <p>The first step in getting a new air conditioner installed is determining what size you need. You don't want one without sufficient power to cool your home, and getting an air conditioner that's too big can be more expensive and less comfortable.</p>
-
-          <!-- Dropdown Menu -->
-          <div class="accordion" id="accordionExample">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Residential <i class="bi bi-chevron-down"></i>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul>
-                    <li>Air Conditioning Repair</li>
-                    <li>Air Conditioning Maintenance</li>
-                    <li>Maintenance Agreements</li>
-                    <li>Commercial Central Air Conditioners</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Window & Thru-the-Wall Air Conditioners <i class="bi bi-chevron-down"></i>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul>
-                    <li>Air Conditioning Installation: Regular/Custom/Top/Through-the-wall</li>
-                    <li>Preventative Maintenance</li>
-                    <li>Remove old A/C from the window/Wall</li>
-                    <li>Take away old A/C to recycling</li>
-                    <li>Regular Triangle bracket</li>
-                    <li>Raised on Floor (s)</li>
-                    <li>Custom Bracket</li>
-                    <li>Delivery unit (s)</li>
-                    <li>Aluminum Bar</li>
-                    <li>Cutting children gate</li>
-                    <li>Installation Plexiglass one side</li>
-                    <li>Caulking</li>
-                    <li>Installation Foam Board one side</li>
-                    <li>Chemical cleaning</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <img src="{% static 'img/ResidentialInstallation.jpeg' %}" class="img-fluid mb-4 enlarged-img" alt="acinstallation">
-          <img src="{% static 'img/acinstallation2.jpg' %}" class="img-fluid mb-4 enlarged-img" alt="acinstallation">
+          <img src="{% static 'img/service-img.jpg' %}" class="img-fluid" alt="service image">
         </div>
       </div>
     </div>

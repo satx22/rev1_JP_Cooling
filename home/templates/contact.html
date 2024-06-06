@@ -54,7 +54,6 @@
           <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
           <li><a class="nav-link scrollto" href="{% url 'contact' %}">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </header><!-- End Header -->
@@ -143,6 +142,15 @@
   <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
   <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
   <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+      document.querySelector('#navbar').classList.toggle('navbar-mobile');
+      this.classList.toggle('bi-list');
+      this.classList.toggle('bi-x');
+    });
+  </script>
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>

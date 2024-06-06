@@ -1,19 +1,19 @@
-
-
 {% extends "base.html" %}
-{%load static%}
+{% load static %}
 
 {% block content %}
+  <!-- ======= Hero Sections ======= -->
+<!-- Home page hero section -->
+<section id="hero" class="desktop-hero" style="background: url('{% static 'img/new-hero-background.jpg' %}') no-repeat center top; background-size: contain; height: 50vh; display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; margin-top: 135px;">
+  <div class="hero-container" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+  </div>
+</section>
 
-    
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" style="background: url('{% static 'img/new-hero-background.jpg' %}') top center; background-size: cover;">
-    <div class="hero-container">
-      <h1>Welcome to JP Cooling and Heating</h1>
-      <h2>Reliable and Affordable Air Conditioning Services</h2>
-      <a href="{% url 'about' %}" class="btn-get-started scrollto">Learn More</a>
-    </div>
-  </section><!-- #hero -->
+<!-- Mobile hero section -->
+<section id="mobile-hero" class="mobile-hero" style="background: url('{% static 'img/Final_JP_Cooling_Heating_logo.jpg' %}') no-repeat center top; background-size: contain; height: 30vh; display: none; align-items: center; justify-content: center; padding: 0; margin: 0;">
+  <div class="hero-container" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+  </div>
+</section>
 
   <main id="main">
     <!-- ======= About Us Section ======= -->
@@ -22,7 +22,6 @@
         <div class="section-title">
           <h2>About Us</h2>
         </div>
-
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2">
             <img src="{% static 'img/about-img.jpg' %}" class="img-fluid" alt="">
@@ -41,7 +40,6 @@
             <p>Contact us today to experience the best in air conditioning services. We are here to provide you with the comfort you deserve.</p>
           </div>
         </div>
-
         <div class="row mt-4">
           <div class="col-lg-12">
             <h3>Mission Statement</h3>
@@ -50,7 +48,6 @@
             </p>
           </div>
         </div>
-
         <div class="row benefits">
           <div class="col-lg-8">
             <h4>Benefits of a New Air Conditioning System</h4>
@@ -64,7 +61,6 @@
               <li>New digital thermostats with optional WiFi control</li>
             </ul>
           </div>
-
           <div class="col-lg-4">
             <!-- Special Offers Section -->
             <div class="col-lg-6">
@@ -75,7 +71,7 @@
                   <form action="#" method="post">
                     {% csrf_token %}
                     <input type="email" name="email" placeholder="Enter your e-mail address..." required>
-                    <button type="submit"><i class="bi bi-send"></i></button> <!-- Using Bootstrap Icons -->
+                    <button type="submit"><i class="bi bi-send"></i></button>
                   </form>
                 </div>
               </section>
@@ -86,38 +82,40 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section id="services" class="services">
       <div class="container">
         <div class="section-title">
           <h2>Our Services</h2>
           <p>We offer a wide range of air conditioning services to meet all your needs. Our expert technicians are equipped to handle any job, big or small.</p>
         </div>
-
         <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bi bi-snow"></i></div>
-            <h4 class="title"><a href="{% url 'acinstallation' %}">A/C Installation</a></h4>
-            <p class="description">High-quality installation of residential air conditioning systems.</p>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-snow"></i></div>
+              <h4><a href="{% url 'acinstallation' %}">A/C Installation</a></h4>
+              <p>High-quality installation of residential air conditioning systems.</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bi bi-shield-check"></i></div>
-            <h4 class="title"><a href="{% url 'antimicrobialfogging' %}">Anti-Microbial Fogging</a></h4>
-            <p class="description">Effective anti-microbial fogging services to sanitize your HVAC system.</p>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-shield-check"></i></div>
+              <h4><a href="{% url 'antimicrobialfogging' %}">Anti-Microbial Fogging</a></h4>
+              <p>Effective anti-microbial fogging services to sanitize your HVAC system.</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bi bi-sliders"></i></div>
-            <h4 class="title"><a href="{% url 'ductlessminisplits' %}">Ductless Mini Splits</a></h4>
-            <p class="description">Professional maintenance and repair services for ductless mini split systems.</p>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-tools"></i></div>
+              <h4><a href="{% url 'MaintenanceandRepair' %}">Maintenance and Repair</a></h4>
+              <p>Full service maintenance to keep your air conditioning system running efficiently.</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bi bi-wrench"></i></div>
-            <h4 class="title"><a href="{% url 'MaintenanceandRepair' %}">Maintenance and Repair</a></h4>
-            <p class="description">Full service maintenance to keep your air conditioning system running efficiently.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bi bi-clipboard-check"></i></div>
-            <h4 class="title"><a href="{% url 'tuneup' %}">Tune-Up & Inspections</a></h4>
-            <p class="description">Comprehensive tune-up and inspection services to ensure optimal performance.</p>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-clipboard-check"></i></div>
+              <h4><a href="{% url 'tuneup' %}">Tune-Up & Inspections</a></h4>
+              <p>Comprehensive tune-up and inspection services to ensure optimal performance.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -140,7 +138,6 @@
         <div class="section-title">
           <h2>Reviews</h2>
         </div>
-
         <div class="row">
           <div class="col-lg-6 col-md-6 review-item">
             <div class="review-wrap">
@@ -158,7 +155,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-6 col-md-6 review-item">
             <div class="review-wrap">
               <div class="review-info">
@@ -175,7 +171,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 review-item">
             <div class="review-wrap">
               <div class="review-info">
@@ -251,7 +246,6 @@
                   <option value="Window Unit Installation">Window Unit Installation</option>
                   <option value="Wall Unit Installation">Wall Unit Installation</option>
                   <option value="Maintenance, Support and Repair">Maintenance, Support and Repair</option>
-                  <option value="Ducting Mini Splits">Ducting Mini Splits</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
@@ -268,5 +262,3 @@
       </div>
     </section><!-- End Contact Us Section -->
 {% endblock %}
-    
-

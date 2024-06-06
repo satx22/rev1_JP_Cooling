@@ -1,11 +1,3 @@
-/**
-* Template Name: Amoeba
-* Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -112,14 +104,13 @@
     onscroll(document, toggleBacktotop)
   }
 
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+  // Mobile nav toggle
+document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+  document.querySelector('#navbar').classList.toggle('navbar-mobile');
+  this.classList.toggle('bi-list');
+  this.classList.toggle('bi-x');
+});
+
 
   /**
    * Mobile nav dropdowns activate

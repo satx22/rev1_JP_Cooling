@@ -26,7 +26,8 @@ SECRET_KEY = ('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['159.89.53.173', '127.0.0.1']
+ALLOWED_HOSTS = ['159.89.53.173', '127.0.0.1', 'localhost', '192.168.1.217', '192.168.1.251']
+
 
 
 # Application definition
@@ -136,6 +137,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # This is the list of directories where Django will look for additional static files
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+    BASE_DIR / "static",
 ]
 
 

@@ -10,7 +10,6 @@ urlpatterns = [
     path('acinstallation/', views.acinstallation, name='acinstallation'),
     path('antimicrobialfogging/', views.antimicrobialfogging, name='antimicrobialfogging'),
     path('contact/', views.contact, name='contact'),
-    path('ductlessminisplits/', views.ductlessminisplits, name='ductlessminisplits'),
     path('MaintenanceandRepair/', views.MaintenanceandRepair, name='MaintenanceandRepair'),
     path('services/', views.services, name='services'),
     path('tuneup/', views.tuneup, name='tuneup'),

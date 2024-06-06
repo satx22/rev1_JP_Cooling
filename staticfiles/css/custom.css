@@ -1,0 +1,42 @@
+/* Custom CSS */
+#hero {
+  width: 100%;
+  height: 75vh;
+  background: url("{% static 'img/new-hero-background.jpg' %}") top center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -63px;
+}
+
+/* Remove the overlay */
+/* #hero:before {
+  content: "";
+  background: rgba(83, 83, 83, 0.5); 
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding-top: 80px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 56px;
+  color: #ff0000; /* red */
+}
