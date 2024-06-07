@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-"""
-URL configuration for jp_cooling_heating project.
+"""jp_cooling_heating URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -17,20 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-# jp_cooling_heating/urls.py
-
->>>>>>> f1658044e2a149c56a2857c5c6ab972bacee52ad
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
     path('', include('home.urls')),  # Include URLs from the home app
 ]
 
-=======
-    path('', include('home.urls')),  # Include the URLs from your home app
-   
-]
->>>>>>> f1658044e2a149c56a2857c5c6ab972bacee52ad
