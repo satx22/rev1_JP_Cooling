@@ -14,7 +14,7 @@ def about(request):
     return render(request, 'about.html')
 
 def acinstallation(request):
-    return render(request, 'acInstallation.html')
+    return render(request, 'acinstallation.html')
 
 def antimicrobialfogging(request):
     return render(request, 'antimicrobialfogging.html')
@@ -66,3 +66,4 @@ def special_offer(request):
     else:
         form = SpecialOfferEmailForm()
     return render(request, 'home/special_offer.html', {'form': form})
+
