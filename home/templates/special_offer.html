@@ -1,0 +1,16 @@
+<!-- home/templates/home/special_offer.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Offer</title>
+</head>
+<body>
+    <h1>Sign Up for Special Offers</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
