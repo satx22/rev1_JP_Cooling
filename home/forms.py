@@ -12,7 +12,6 @@ class ContactForm(forms.Form):
             ('Window Unit Installation', 'Window Unit Installation'),
             ('Wall Unit Installation', 'Wall Unit Installation'),
             ('Maintenance, Support and Repair', 'Maintenance, Support and Repair'),
-            ('Ducting Mini Splits', 'Ducting Mini Splits'),
             ('Other', 'Other'),
         ],
         widget=forms.Select(attrs={'class': 'form-control'})
