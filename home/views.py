@@ -14,7 +14,7 @@ def about(request):
     return render(request, 'about.html')
 
 def acinstallation(request):
-    return render(request, 'acinstallation.html')
+    return render(request, 'acInstallation.html')
 
 def antimicrobialfogging(request):
     return render(request, 'antimicrobialfogging.html')
