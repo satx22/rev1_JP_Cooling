@@ -26,7 +26,13 @@ SECRET_KEY = ('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['159.89.53.173', '127.0.0.1']
+ALLOWED_HOSTS = [
+'159.89.53.173',
+'127.0.0.1',
+'jpcoolingandheating.pro',
+'www.jpcoolingandheating.pro',
+'3abrxlxw.gimkitconnect.com']
+ ]
 
 
 # Application definition
