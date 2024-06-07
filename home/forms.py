@@ -1,6 +1,4 @@
 from django import forms
-<<<<<<< HEAD
-
 class ContactForm(forms.Form):
     name = forms.CharField(max_length=100)
     email = forms.EmailField()
@@ -34,4 +32,4 @@ class SpecialOfferEmailForm(forms.ModelForm):
     class Meta:
         model = SpecialOfferEmail
         fields = ['email']
->>>>>>> f1658044e2a149c56a2857c5c6ab972bacee52ad
+
