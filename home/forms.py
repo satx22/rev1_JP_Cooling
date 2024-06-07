@@ -22,3 +22,4 @@ class SpecialOfferEmailForm(forms.ModelForm):
     class Meta:
         model = SpecialOfferEmail
         fields = ['email']
+
